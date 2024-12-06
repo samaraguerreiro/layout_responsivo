@@ -7,9 +7,9 @@
 
 /* Definindo fontes e cores gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #fce4ec; /* Cor de fundo suave, rosa claro */
     color: #333;
 }
 
@@ -22,29 +22,38 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: #333;
+    background-color: #ff80ab; /* Rosa suave */
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
+    border-bottom: 5px solid #f48fb1; /* Rosa mais claro para a borda */
 }
 
 header h1 {
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #fce4ec; /* Cor de hover mais clara */
 }
 
 /* Seções */
@@ -52,11 +61,18 @@ nav ul li a {
     padding: 40px 0;
     background-color: #fff;
     margin: 20px 0;
+    border-radius: 10px; /* Bordas arredondadas para um toque mais suave */
 }
 
 h2 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 2rem;
+    color: #ff80ab;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
 
 ul {
@@ -69,20 +85,26 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ff80ab;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 ul li a:hover {
-    color: #007BFF;
+    color: #f48fb1;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #ff80ab;
     color: white;
     padding: 10px 0;
     text-align: center;
+    border-top: 5px solid #f48fb1;
+}
+
+footer p {
+    font-size: 1rem;
 }
 
 /* Estilos responsivos */
@@ -97,11 +119,11 @@ footer {
     }
 
     header h1 {
-        font-size: 28px;
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 1.5rem;
     }
 
     ul li {
@@ -111,11 +133,11 @@ footer {
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 24px;
+        font-size: 1.8rem;
     }
 
     nav ul li a {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .container {
